@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/myscript.js"></script>
+	<title>Image Upload</title>
+</head>
+<body>
+
+<div id="content">
+
+  <form method="POST" action="index.php" enctype="multipart/form-data">
+        <input type="hidden" name="size" value="1000000">
+        <div>
+          <p><i>you can upload only image or post</i></p>
+          <label>
+            <input type="file" name="image" accept="image/png,image/jpg,image/img, image/gif, image/jpeg" />
+          </label>
+         
+        </div>
+        <div>
+          <input type="text" name="posttitle" placeholder="Title of your post" required />
+      <textarea 
+        cols="40" 
+        rows="4" 
+        name="text" 
+        placeholder="write a post..."></textarea>
+        </div>
+        <div>
+                <button type="submit" name="upload">POST</button>
+        </div>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?php
+//required_once("globals.php");
+/*$_SESSION[CURRENT_PAGE]=1;
+$_SESSION[CURRENT_VIEW]= "";
+$_SESSION[$CURRENT_MAIN_MENU_ITEM] = "";
+$_SESSION[$SAVE_URL] = "";
+$_SESSION[$UPDATED] = "NO";
+$_SESSION[$STATUS] = "";
+$_SESSION[$CURRENT_USER_ID] = "";
+$_SESSION[$ARRAY_SITE_INFO] = array(array());
+$_SESSION[$ARRAT_DATA1] = array(array());
+$_SESSION[$ARRAY_CURRENT_USER_INFO] = array(array());*/
+$_SESSION['SESSION'] = true;
+$_SESSION[SETTINGS_LOGGED_TIME] = 0;
+$_SESSION[SETTINGS_LOGGED_TIME_INCRREMENT] = 0;
+?>

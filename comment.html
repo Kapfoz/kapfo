@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/myscript.js"></script>
+    <title>comment</title>
+</head>
+<body>
+
+<!-- HTML form for submitting comments -->
+<div class="comment-form">
+    <h3>Add a Comment</h3>
+    <form method="post" action="">
+        <input type="hidden" name="post_id" value="<?php echo $_GET['post_id']; ?>">
+        <textarea name="comment_text" placeholder="Write your comment here" required></textarea>
+        <input type="submit" name="comment_submit" value="Submit Comment">
+    </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/myscript.js"></script>
+    <title>Registration</title>
+</head>
+<body>
+  <div>
+    <div class="registrationcontainer">
+      <div>
+        <br>
+        <a href="../index.php">
+          <button>Browse without register</button>
+        </a>
+      </div>
+      <form action="registration.php" method="post">
+        <div class="loginouter">
+          <div class="container1">
+            <h1 style="text-align: center;">Registration</h1>
+            <p>Please fill in this form to create an account.</p>
+            <p><i>Caution: Once you successfully register, it cannot be edited or changed again</i></p>
+            <hr>
+            <div class="form">
+              <label for="username">Username:</label>
+              <input type="text" name="username" id="username" placeholder="Username" required />
+              
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="Email" required />
+              
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="password" placeholder="Password (Hint: Do not forget your password, it cannot be changed/reset)" required />
+              
+              <label for="confirmPassword">Confirm Password:</label>
+              <input type="password" name="confirm_password" id="confirmPassword" placeholder="Confirm Password" required />
+              
+              <label for="profession">Profession:</label>
+              <input type="text" name="profession" id="profession" placeholder="e.g., student, Professor, Engineer, Doctor, etc." required />
+              
+              <label for="address">Address:</label>
+              <input type="text" name="address" id="address" placeholder="Address" required />
+              
+              <button>
+                <input class="logbtn" type="submit" name="submit" value="Register" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div>
+        <a href="login.php">
+          <button>Already registered</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
